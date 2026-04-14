@@ -1,0 +1,87 @@
+/* ================= HERO ================= */
+
+.about-hero-small {
+  position: relative;
+  height: 55vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ================= OVERLAY ================= */
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    135deg,
+    rgba(20, 0, 40, 0.8),
+    rgba(75, 30, 109, 0.7)
+  );
+
+  z-index: 1;
+}
+
+/* ================= CONTENT ================= */
+
+.about-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.about-inner h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
+
+.about-inner h1 span {
+  background: linear-gradient(135deg, #f5d67b, #d4af37);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.about-inner p {
+  margin-top: 15px;
+  color: #d1c6e0;
+  line-height: 1.6;
+}
+
+/* ================= GLOW ================= */
+
+.about-glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+
+  background: radial-gradient(circle, rgba(212,175,55,0.3), transparent);
+
+  bottom: -100px;
+  left: -100px;
+
+  filter: blur(90px);
+  z-index: 1;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .about-hero-small {
+    height: 45vh;
+  }
+
+  .about-inner h1 {
+    font-size: 30px;
+  }
+}

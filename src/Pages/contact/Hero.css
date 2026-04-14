@@ -1,0 +1,135 @@
+/* ================= HERO ================= */
+
+.contact-hero {
+  position: relative;
+  height: 65vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* OVERLAY */
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    135deg,
+    rgba(20, 0, 40, 0.88),
+    rgba(75, 30, 109, 0.75)
+  );
+
+  z-index: 1;
+}
+
+/* CONTENT */
+.contact-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+/* TITLE */
+.contact-content h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.contact-content h1 span {
+  background: linear-gradient(135deg, #f5d67b, #d4af37);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* TEXT */
+.contact-content p {
+  margin-top: 15px;
+  color: #d1c6e0;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 12px;
+  margin: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+/* PRIMARY */
+.primary {
+  background: linear-gradient(135deg, #d4af37, #f5d67b);
+  color: #2b0a3d;
+}
+
+.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(212,175,55,0.4);
+}
+
+/* SECONDARY */
+.secondary {
+  border: 1px solid #d4af37;
+  color: #f5d67b;
+}
+
+.secondary:hover {
+  background: #d4af37;
+  color: #2b0a3d;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #cfc6dc;
+  text-decoration: none;
+}
+
+.breadcrumb .active {
+  color: #f5d67b;
+}
+
+/* GLOW */
+.contact-glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+
+  background: radial-gradient(circle, rgba(212,175,55,0.3), transparent);
+
+  bottom: -120px;
+  right: -120px;
+
+  filter: blur(100px);
+  z-index: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 50vh;
+  }
+
+  .contact-content h1 {
+    font-size: 32px;
+  }
+}

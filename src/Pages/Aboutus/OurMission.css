@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Raleway:wght@300;400;500;600&display=swap');
+
+/* ══════════════════════════════════════
+   VARIABLES
+══════════════════════════════════════ */
+:root {
+  --purple-deep:  #0f001f;
+  --purple-mid:   #2d0058;
+  --purple-vivid: #6b21a8;
+  --gold-bright:  #fde68a;
+  --gold-mid:     #f59e0b;
+  --gold-dark:    #b45309;
+  --white:        #ffffff;
+  --text-soft:    rgba(226, 210, 255, 0.82);
+  --text-muted:   rgba(226, 210, 255, 0.52);
+  --glow-purple:  rgba(139, 92, 246, 0.45);
+  --glow-gold:    rgba(245, 158, 11, 0.45);
+  --spring:       cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ══════════════════════════════════════
+   RESET
+══════════════════════════════════════ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ================= MISSION SECTION ================= */
+
+.mission {
+  padding: 100px 8%;
+  background: linear-gradient(135deg, #2b0a3d, #1a0628);
+  color: white;
+}
+
+/* CONTAINER */
+.mission-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* ================= TEXT ================= */
+
+.mission-text {
+  flex: 1;
+}
+
+.mission-text h2 {
+  font-size: 36px;
+  font-weight: 800;
+
+  background: linear-gradient(135deg, #f5d67b, #d4af37);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.mission-text p {
+  margin-top: 15px;
+  color: #d1c6e0;
+  line-height: 1.7;
+}
+
+/* BUTTON */
+.mission-btn {
+  margin-top: 25px;
+  padding: 12px 28px;
+
+  border-radius: 12px;
+  border: none;
+
+  background: linear-gradient(135deg, #d4af37, #f5d67b);
+  color: #2b0a3d;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mission-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(212,175,55,0.4);
+}
+
+/* ================= CARD ================= */
+
+.mission-card {
+  flex: 1;
+  position: relative;
+
+  padding: 30px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+/* GLOW */
+.card-glow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+  background: radial-gradient(circle, rgba(212,175,55,0.3), transparent);
+
+  top: -50px;
+  right: -50px;
+  filter: blur(70px);
+}
+
+/* CARD TEXT */
+.mission-card h3 {
+  color: #f5d67b;
+  margin-bottom: 10px;
+}
+
+.mission-card ul li {
+  margin: 10px 0;
+  color: #e5dff0;
+}
+
+/* HOVER */
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(212,175,55,0.2);
+}
+
+/* ================= VALUES ================= */
+
+.values {
+  padding: 100px 8%;
+  background: linear-gradient(135deg, #1a0628, #2b0a3d);
+  text-align: center;
+}
+
+/* TITLE */
+.values-title {
+  font-size: 36px;
+  font-weight: 800;
+
+  background: linear-gradient(135deg, #f5d67b, #d4af37);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* GRID */
+.values-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.value-card {
+  position: relative;
+  padding: 25px;
+
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+/* GLOW */
+.value-card .glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  background: radial-gradient(circle, rgba(212,175,55,0.3), transparent);
+
+  top: -40px;
+  left: -40px;
+  filter: blur(60px);
+}
+
+/* TEXT */
+.value-card h3 {
+  color: #f5d67b;
+}
+
+.value-card p {
+  margin-top: 8px;
+  color: #d1c6e0;
+  font-size: 14px;
+}
+
+/* HOVER */
+.value-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 60px rgba(212,175,55,0.2);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .mission-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-text h2,
+  .values-title {
+    font-size: 28px;
+  }
+}
+
+/* ================= CTA SECTION ================= */
+
+.cta {
+  position: relative;
+  padding: 120px 8%;
+  text-align: center;
+  overflow: hidden;
+
+  background: linear-gradient(135deg, #2b0a3d, #1a0628);
+}
+
+/* ================= GLOW ================= */
+
+.cta-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+
+  background: radial-gradient(circle, rgba(212,175,55,0.25), transparent);
+
+  top: -150px;
+  right: -150px;
+
+  filter: blur(120px);
+  z-index: 1;
+}
+
+/* ================= CONTAINER ================= */
+
+.cta-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 800px;
+  margin: auto;
+
+  padding: 50px 40px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+/* ================= TITLE ================= */
+
+.cta-container h2 {
+  font-size: 36px;
+  font-weight: 800;
+
+  background: linear-gradient(135deg, #f5d67b, #d4af37);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ================= TEXT ================= */
+
+.cta-container p {
+  margin-top: 15px;
+  color: #d1c6e0;
+  line-height: 1.6;
+}
+
+/* ================= BUTTONS ================= */
+
+.cta-buttons {
+  margin-top: 30px;
+}
+
+/* COMMON BTN */
+.btn {
+  padding: 12px 28px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+
+  transition: all 0.3s ease;
+}
+
+/* PRIMARY (GOLD) */
+.primary {
+  background: linear-gradient(135deg, #d4af37, #f5d67b);
+  color: #2b0a3d;
+  font-weight: 600;
+}
+
+.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(212,175,55,0.4);
+}
+
+/* SECONDARY (OUTLINE) */
+.secondary {
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #f5d67b;
+}
+
+.secondary:hover {
+  background: #d4af37;
+  color: #2b0a3d;
+}
+
+/* ================= HOVER EFFECT ================= */
+
+.cta-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 80px rgba(212,175,55,0.15);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .cta-container {
+    padding: 30px 20px;
+  }
+
+  .cta-container h2 {
+    font-size: 26px;
+  }
+}
