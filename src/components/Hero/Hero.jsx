@@ -199,7 +199,7 @@ export default function Hero({ title, subtitle, image, images }) {
       {/* ── Main centered content ── */}
       <div className="content" ref={contentRef}>
 
-        <span className="badge">• Welcome to CGI Crafters</span>
+        <span className="badge">• Welcome to CGI TECH SOLUTIONS</span>
 
         <h1 className="title">
           {title || "Transform Your\nBusiness Online"}

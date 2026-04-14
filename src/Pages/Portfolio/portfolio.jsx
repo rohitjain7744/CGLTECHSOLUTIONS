@@ -36,6 +36,7 @@ import img28 from "../../assets/img28.jpeg";
 import img29 from "../../assets/img29.jpeg";
 import img30 from "../../assets/img30.jpeg";
 import img31 from "../../assets/img31.jpeg";
+
 // import img32 from "../../assets/img32.jpeg";
 
 import vid1 from "../../assets/video1.mp4";
@@ -43,36 +44,44 @@ import vid2  from "../../assets/video2.mp4";
 import vid3  from "../../assets/video3.mp4";
 import vid4  from "../../assets/video4.mp4";
 
+import web1 from "../../assets/web1.jpg";
+import web2 from "../../assets/web2.jpg";
+import web3 from "../../assets/web3.jpg";
+
+import media1 from "../../assets/media1.jpg";
+import media2 from "../../assets/media2.jpg";
+import media3 from "../../assets/media3.jpg"; 
+
 /* ══════════════════════════════════════
    PORTFOLIO DATA
 ══════════════════════════════════════ */
 const PROJECTS = [
-  { id: 1,  type: "image", src: img1,  cat: "branding",  tag: "Branding"   },
-  { id: 2,  type: "image", src: img2,  cat: "web",       tag: "Web Dev"    },
-  { id: 3,  type: "image", src: img3,  cat: "smm",       tag: "Social"     },
-  { id: 4,  type: "image", src: img4,  cat: "seo",       tag: "SEO"        },
-  { id: 5,  type: "image", src: img5,  cat: "app",       tag: "App Dev"    },
-  { id: 6,  type: "image", src: img6,  cat: "sem",       tag: "Google Ads" },
-  { id: 7,  type: "image", src: img7,  cat: "web",       tag: "Web Dev"    },
-  { id: 8,  type: "image", src: img8,  cat: "whatsapp",  tag: "WhatsApp"   },
+  { id: 1,  type: "image", src: img1,  cat: "logo",  tag: "Branding"   },
+  { id: 2,  type: "image", src: img2,  cat: "logo",       tag: "Web Dev"    },
+  { id: 3,  type: "image", src: img3,  cat: "logo",       tag: "Social"     },
+  { id: 4,  type: "image", src: img4,  cat: "logo",       tag: "SEO"        },
+  { id: 5,  type: "image", src: img5,  cat: "logo",       tag: "App Dev"    },
+  { id: 6,  type: "image", src: img6,  cat: "logo",       tag: "Google Ads" },
+  { id: 7,  type: "image", src: img7,  cat: "logo",       tag: "Web Dev"    },
+  { id: 8,  type: "image", src: img8,  cat: "logo",  tag: "WhatsApp"   },
   { id: 9,  type: "video", src: vid1,  cat: "video",     tag: "Video"      },
-  { id: 10, type: "image", src: img9,  cat: "branding",  tag: "Branding"   },
-  { id: 11, type: "image", src: img10, cat: "web",       tag: "Web Dev"    },
+  { id: 10, type: "image", src: img9,  cat: "logo",  tag: "Branding"   },
+  { id: 11, type: "image", src: img10, cat: "logo",       tag: "Web Dev"    },
   { id: 12, type: "image", src: img11, cat: "smm",       tag: "Social"     },
   { id: 13, type: "image", src: img12, cat: "seo",       tag: "SEO"        },
   { id: 14, type: "image", src: img13, cat: "app",       tag: "App Dev"    },
   { id: 15, type: "video", src: vid2,  cat: "video",     tag: "Video"      },
   { id: 16, type: "image", src: img14, cat: "sem",       tag: "Google Ads" },
   { id: 17, type: "image", src: img15, cat: "branding",  tag: "Branding"   },
-  { id: 18, type: "image", src: img16, cat: "erp",       tag: "ERP"        },
-  { id: 19, type: "image", src: img17, cat: "web",       tag: "Web Dev"    },
-  { id: 20, type: "image", src: img18, cat: "smm",       tag: "Social"     },
-  { id: 21, type: "image", src: img19, cat: "ai",        tag: "AI Chatbot" },
-  { id: 22, type: "image", src: img20, cat: "whatsapp",  tag: "WhatsApp"   },
+  { id: 18, type: "image", src: img16, cat: "design",       tag: "ERP"        },
+  { id: 19, type: "image", src: img17, cat: "design",       tag: "Web Dev"    },
+  { id: 20, type: "image", src: img18, cat: "design",       tag: "Social"     },
+  { id: 21, type: "image", src: img19, cat: "design",        tag: "AI Chatbot" },
+  { id: 22, type: "image", src: img20, cat: "design",  tag: "WhatsApp"   },
   { id: 23, type: "video", src: vid3,  cat: "video",     tag: "Video"      },
-  { id: 24, type: "image", src: img21, cat: "branding",  tag: "Branding"   },
-  { id: 25, type: "image", src: img22, cat: "web",       tag: "Web Dev"    },
-  { id: 26, type: "image", src: img23, cat: "seo",       tag: "SEO"        },
+  { id: 24, type: "image", src: img21, cat: "design",  tag: "Branding"   },
+  { id: 25, type: "image", src: img22, cat: "design",       tag: "Web Dev"    },
+  { id: 26, type: "image", src: img23, cat: "design",       tag: "SEO"        },
   { id: 27, type: "image", src: img24, cat: "app",       tag: "App Dev"    },
   { id: 28, type: "image", src: img25, cat: "sem",       tag: "Google Ads" },
   { id: 29, type: "image", src: img26, cat: "erp",       tag: "ERP"        },
@@ -83,11 +92,23 @@ const PROJECTS = [
   { id: 34, type: "image", src: img30, cat: "web",       tag: "Web Dev"    },
   { id: 35, type: "image", src: img31, cat: "whatsapp",  tag: "WhatsApp"   },
   // { id: 36, type: "image", src: img32, cat: "seo",       tag: "SEO"        },
+  {id: 37, type: "image", src: web1,  cat: "web",       tag: "Web Dev"    },
+  {id: 38, type: "image", src: web2,  cat: "web",       tag: "Web Dev"    },
+  {id: 39, type: "image", src: web3,  cat: "web",       tag: "Web Dev"    },
+  {id: 40, type: "image", src: media1,  cat: "social",       tag: "Social"    },
+  {id: 41, type: "image", src: media2,  cat: "social",       tag: "Social"    },
+  {id: 42, type: "image", src: media3,  cat: "social",       tag: "Social"    },  
 ];
+
+
 
 const CATEGORIES = [
   { key: "all",      label: "All Work"   },
- 
+  { key: "design",     label: "Logo Design" },
+  {key: "logo",  label:"Our Client"},
+   {key: "web", label:"WEBSITE"},
+   {key:"social", label:"SOCIAL MEDIA"},
+   {key:"video", label:"VIDEO PRODUCTION"},
 ];
 
 /* ══════════════════════════════════════
