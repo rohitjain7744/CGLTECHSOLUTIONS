@@ -27,7 +27,7 @@ const QUICK_LINKS = [
 const SOCIALS = [
   {
     label: "Instagram",
-    href: "https://instagram.com/cgi_crafters_007",
+    href: "https://www.instagram.com/cgi_tech_solutions?igsh=MXMxOW1lM25xZmFxbg==",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>

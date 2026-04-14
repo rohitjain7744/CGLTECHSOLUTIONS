@@ -439,7 +439,7 @@
   object-fit: contain;       /* ✅ shows full image */
   object-position: center;
   display: block;
-  background: rgba(20, 0, 40, 0.6); /* dark purple bg behind transparent logos */
+  background: #ffffff; /* dark purple bg behind transparent logos */
   padding: 12px;               /* small breathing room */
   transition: transform 0.65s var(--spring), padding 0.4s ease;
 }

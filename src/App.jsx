@@ -28,19 +28,11 @@ function ScrollToTop() {
   return null;
 }
 
-/* 🔥 404 PAGE (BETTER UI) */
+/* 🔥 404 PAGE */
 function NotFound() {
   return (
-    <div style={{
-      height: "100vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      background: "#1a0628",
-      color: "#fff",
-      flexDirection: "column"
-    }}>
-      <h1 style={{ fontSize: "50px", color: "#f5d67b" }}>404</h1>
+    <div className="notfound">
+      <h1>404</h1>
       <p>Page Not Found</p>
     </div>
   );
@@ -51,29 +43,26 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
 
-      {/* 🔥 GLOBAL NAVBAR */}
       <Navbar />
 
-      {/* 🔥 ROUTES */}
       <Routes>
-
-        {/* MAIN PAGES */}
+        {/* MAIN */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/clients" element={<OurClient />} /> {/* ✅ FIXED */}
-        <Route path="/blogs" element={<Blogs/>}/>
+        <Route path="/clients" element={<OurClient />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<ContactPage />} />
 
-        {/* 🔥 DYNAMIC SERVICE PAGE */}
+        {/* 🔥 DYNAMIC SERVICES */}
         <Route path="/services/:type" element={<ServiceDetails />} />
 
-        {/* 🔥 404 */}
+        {/* 404 */}
         <Route path="*" element={<NotFound />} />
-
       </Routes>
-      <Footer/>
+
+      <Footer />
     </BrowserRouter>
   );
 }
