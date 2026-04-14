@@ -19,7 +19,7 @@ const NAV_LINKS = [
   { to: "/",         label: "Home"        },
   { to: "/about",    label: "About Us"    },
   { to: "/portfolio",label: "Portfolio"   },
-  // { to: "/clients",  label: "Our Clients" },
+  { to: "/clients",  label: "Our Clients" },
   { to: "/blogs",    label: "Blogs"       },
 ];
 

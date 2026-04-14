@@ -47,6 +47,13 @@ import vid4  from "../../assets/video4.mp4";
 import web1 from "../../assets/web1.jpg";
 import web2 from "../../assets/web2.jpg";
 import web3 from "../../assets/web3.jpg";
+import web4 from "../../assets/web4.jpg";
+import web5 from "../../assets/web5.jpg";
+import web6 from "../../assets/web6.jpg"; 
+import web7 from "../../assets/web7.jpg";
+import web8 from "../../assets/web8.jpg";
+import web9 from "../../assets/web9.jpg";
+
 
 import media1 from "../../assets/media1.jpg";
 import media2 from "../../assets/media2.jpg";
@@ -98,6 +105,13 @@ const PROJECTS = [
   {id: 40, type: "image", src: media1,  cat: "social",       tag: "Social"    },
   {id: 41, type: "image", src: media2,  cat: "social",       tag: "Social"    },
   {id: 42, type: "image", src: media3,  cat: "social",       tag: "Social"    },  
+  {id: 43, type: "image", src: web4,  cat: "web",       tag: "Web Dev"    },
+  {id: 44, type: "image", src: web5,  cat: "web",       tag: "Web Dev"    },
+  {id: 45, type: "image", src: web6,  cat: "web",       tag: "Web Dev"    },
+  {id: 46, type: "image", src: web7,  cat: "web",       tag: "Web Dev"    },
+  {id: 47, type: "image", src: web8,  cat: "web",       tag: "Web Dev"    },
+  {id: 48, type: "image", src: web9,  cat: "web",       tag: "Web Dev"    }
+
 ];
 
 
@@ -105,7 +119,7 @@ const PROJECTS = [
 const CATEGORIES = [
   { key: "all",      label: "All Work"   },
  
-  {key: "logo", label:"Our Client"},
+  // {key: "logo", label:"Our Client"},
    {key: "web", label:"WEBSITE"},
    {key:"social", label:"SOCIAL MEDIA"},
    {key:"video", label:"VIDEO PRODUCTION"},
